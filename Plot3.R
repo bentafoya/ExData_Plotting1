@@ -25,5 +25,5 @@ lines(finalData$SetTime, finalData$Sub_metering_3, col=columnlines[3])
 legend("topright", legend=labels, col=columnlines, lty="solid")
 
 ## Copy Plot3 to file and close
-dev.copy(png, file = "Plot3.png")
+dev.copy(png, "plot3.png", width = 480, height = 480)
 dev.off()
