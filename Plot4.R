@@ -29,6 +29,6 @@ legend("topright", bty="n", legend=labels, lty=1, col=columnlines)
 plot(finalData$SetTime, finalData$Global_reactive_power, type="l", col="black", xlab="datetime", ylab="Global_reactive_power")
 
 ## Copy Plot4 to file and close
-dev.copy(png, file = "Plot4.png")
+dev.copy(png, "plot4.png", width = 480, height = 480)
 dev.off()
 
