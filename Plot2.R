@@ -20,5 +20,5 @@ finalData <- cbind(SetTime, finalData)
 hist(finalData$Global_active_power, col="red", main="Global Active Power", xlab="Global Active Power (kilowatts)")
 plot(finalData$SetTime, finalData$Global_active_power, type="l", col="black", xlab="", ylab="Global Active Power (kilowatts)")
 ## Copy Plot2 to file and close
-dev.copy(png, file = "Plot2.png")
+dev.copy(png, "plot2.png", width = 480, height = 480)
 dev.off()
